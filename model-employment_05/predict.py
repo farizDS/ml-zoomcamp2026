@@ -40,7 +40,7 @@ class PredictResponse(BaseModel):
     churn: bool
 
 
-app = FastAPI(title="customer-churn-prediction")
+app = FastAPI(title="churn-prediction")
 
 with open('model.bin', 'rb') as f_in:
     pipeline = pickle.load(f_in)
